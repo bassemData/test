@@ -13,11 +13,11 @@ ticks = [i + BAR_WIDTH / 2 for i in index_teamA]
 tick_label = ('lab1', 'lab2', 'lab3', 'lab4', 'lab5')
 
 pylot.bar(index_teamA, teamA_result, BAR_WIDTH, color='g', label='team A')
-#pylot.bar(index_teamB, teamB_result, BAR_WIDTH, color='c', label='team B')
+pylot.bar(index_teamB, teamB_result, BAR_WIDTH, color='c', label='team B')
 
 pylot.xlabel('Labs')
 pylot.ylabel('Score')
 pylot.title('score by lab')
-#pylot.xticks(ticks, tick_label)
+pylot.xticks(ticks, tick_label)
 pylot.legend()
 pylot.show()
